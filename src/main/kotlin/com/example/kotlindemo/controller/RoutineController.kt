@@ -27,5 +27,8 @@ class RoutineController(private val routineRepository: RoutineRepository) {
     fun getRoutinesByUserId(): List<Routine>{
         return routineRepository.findByName("Chest Routine")
     }
-
+    @GetMapping("/routines/{id}")
+    fun getRoutinesByUserName(@PathVariable(value="id") userId: String): List<Routine>{
+        return routineRepository.findByUserid(userId)
+    }
 }

@@ -18,6 +18,6 @@ data class Routine(
     val rest: String,
 
     @get: NotBlank
-    val user_id: String
+    val userid: String
 
 )
