@@ -1,5 +1,8 @@
 package com.example.kotlindemo.model
 
+import com.example.kotlindemo.repository.ExerciseRepository
+import com.example.kotlindemo.repository.RoutineRepository
+import org.springframework.stereotype.Service
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
@@ -21,3 +24,4 @@ data class Exercise(
     val routine: String = ""
 
     )
+

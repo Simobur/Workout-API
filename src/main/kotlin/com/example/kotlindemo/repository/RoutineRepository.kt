@@ -10,5 +10,6 @@ interface RoutineRepository: JpaRepository<Routine, Long> {
     fun findByName (name: String): List<Routine>
 
     fun findByUserid(userid: String): List<Routine>
+
 }
 
