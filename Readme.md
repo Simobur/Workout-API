@@ -1,62 +1,44 @@
-# Kotlin, Spring Boot, MySQL, JPA, Hibernate Rest API
-
-Build a Restful CRUD API using Kotlin, Spring Boot, Mysql, JPA and Hibernate.
-
-## Requirements
-
-1. Java - 11
-
-2. Maven - 3.x.x
-
-3. Mysql - 5.x.x
-
-## Steps to Setup
-
-**1. Clone the application**
-
-```bash
-git clone https://github.com/callicoder/kotlin-spring-boot-jpa-rest-api-demo.git
-```
-
-**2. Create Mysql database**
-```bash
-create database kotlin_demo_app
-```
-
-**3. Change mysql username and password as per your installation**
-
-+ open `src/main/resources/application.properties`
-
-+ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
-
-**4. Running the App**
-
-Type the following command in your terminal to run the app -
-
-```bash
-mvn spring-boot:run
-```
-
-The app will start running at <http://localhost:8080>.
-
-## Explore Rest APIs
+# Explore Rest APIs
 
 The app defines following CRUD APIs.
+/api/workout 
 
-    GET /api/articles
+# Users:
+
+    GET /users
     
-    POST /api/articles
+    POST /users
     
-    GET /api/articles/{id}
+    GET /users/{id}
     
-    PUT /api/articles/{id}
+    PUT /users/{id}
     
-    DELETE /api/articles/{id}
+    DELETE /users/{id}
 
-You can test them using postman or any other rest client.
+# Routines
 
-## Learn more
+    GET /routines
 
-You can find the tutorial for this application on my blog -
+    POST /routines
+    
+    GET /routines/{id}
+    
+    PUT /routines/{id}
+    
+    DELETE /routines/{id}
 
-<https://www.callicoder.com/kotlin-spring-boot-mysql-jpa-hibernate-rest-api-tutorial/>
+    GET by UserId /routines/user?id="id"
+
+# Exercises
+
+    GET /exercises
+
+    POST /exercises
+    
+    GET /exercises/{id}
+    
+    PUT /exercises/{id}
+    
+    DELETE /exercises/{id}
+
+    GET by RoutineId /exercises/routine?id="id"
